@@ -17,7 +17,7 @@
         //     //Verifico se a senha e a confirmação de senha são iguais.
             if($senha === $confirm_senha) {
 
-                $password_hash = password_hash($senha, PASSWORD_DEFAULT);
+                $password_hash = password_hash($senha, PASSWORD_DEFAULT); //implementação do hash
 
                 $sql = $pdo->prepare( "INSERT INTO usuarios (nome, email, senha) VALUES (:name, :email, :senha)" );
                 $sql->bindValue(':name', $name);
