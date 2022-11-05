@@ -75,7 +75,7 @@ foreach($dados as $aluno) :?>
                             onclick="return confirm('Tem certeza que deseja excluir:')"
                             class="btn btn-danger"
                             >
-                            Excluir
+                            Excluir </a>
 
 
     </tr>
